@@ -1,11 +1,13 @@
 import random
 import time
-
+#This program will compute how much time on average it is going to take for random guesser(monkey) to get certain % right
+#for the given sentence(in this case, the sentence is "methinks it is like a weasel")
 start = time.time()
 print("start of the program")
 b = 'methinks it is like a weasel'
-seq = 'abcdefghijklmnopqrstuvwxyz '
-qu = float(input("Type in the % of correctly identified sequence you want to have. Keep in mind , that higher the %, higher the time, needed to find it(on average).\n"))
+seq = 'abcdefghijklmnopqrstuvwxyz ' #alphabet plus space
+qu = float(input("Type in the % of correctly identified sequence you want to see. Keep in mind , that higher the %,\n
+                 higher the time it takes to find it(on average).\n"))
 def score(a,b):
     global k
     k = 0
